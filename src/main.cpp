@@ -5,6 +5,7 @@ const int btn1pin = 2;
 const int btn2pin = 3;
 InterruptButton btn1(btn1pin);
 InterruptButton btn2(btn2pin);
+bool ledState = false;
 
 void btn1_change_func() {
   btn1.changeInterruptFunc();
@@ -16,10 +17,12 @@ void btn2_change_func() {
 
 void btn1_1shortclick() {
   Serial.println("btn1 clicked 1 time");
+  digitalWrite(LED_BUILTIN, HIGH);
 }
 
 void btn1_2shortclick() {
   Serial.println("btn1 clicked 2 times");
+  digitalWrite(LED_BUILTIN, LOW);
 }
 
 void btn1_3shortclick() {
