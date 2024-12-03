@@ -17,12 +17,14 @@ void btn2_change_func() {
 
 void btn1_1shortclick() {
   Serial.println("btn1 clicked 1 time");
-  digitalWrite(LED_BUILTIN, HIGH);
+  ledState = HIGH;
+  digitalWrite(LED_BUILTIN, ledState);
 }
 
 void btn1_2shortclick() {
   Serial.println("btn1 clicked 2 times");
-  digitalWrite(LED_BUILTIN, LOW);
+  ledState = LOW;
+  digitalWrite(LED_BUILTIN, ledState);
 }
 
 void btn1_3shortclick() {
@@ -31,10 +33,14 @@ void btn1_3shortclick() {
 
 void btn1_1longclick() {
   Serial.println("btn1 long pressed 1 time");
+  ledState = HIGH;
+  digitalWrite(LED_BUILTIN, ledState);
 }
 
 void btn1_2longclick() {
   Serial.println("btn1 long pressed 2 times");
+  ledState = LOW;
+  digitalWrite(LED_BUILTIN, ledState);
 }
 
 void btn1_3longclick() {
@@ -44,10 +50,14 @@ void btn1_3longclick() {
 
 void btn2_1shortclick() {
   Serial.println("btn2 clicked 1 time");
+  ledState = HIGH;
+  digitalWrite(LED_BUILTIN, ledState);
 }
 
 void btn2_2shortclick() {
   Serial.println("btn2 clicked 2 times");
+  ledState = LOW;
+  digitalWrite(LED_BUILTIN, ledState);
 }
 
 void btn2_3shortclick() {
@@ -56,10 +66,14 @@ void btn2_3shortclick() {
 
 void btn2_1longclick() {
   Serial.println("btn2 long pressed 1 time");
+  ledState = HIGH;
+  digitalWrite(LED_BUILTIN, ledState);
 }
 
 void btn2_2longclick() {
   Serial.println("btn2 long pressed 2 times");
+  ledState = LOW;
+  digitalWrite(LED_BUILTIN, ledState);
 }
 
 void btn2_3longclick() {
